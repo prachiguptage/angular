@@ -1,0 +1,12 @@
+<ul >
+        <li *ngFor="let contact of contacts">
+            <span>
+                <div>{{contact.name}}</div> 
+                <div>{{contact.email}}</div>
+            </span>
+            <span>
+                <button (click)= 'onDelete(contact)'>delete</button>
+            </span>
+          
+        </li>
+      </ul>
